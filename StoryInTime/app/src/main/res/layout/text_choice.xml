@@ -6,22 +6,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:gravity="center"
-        android:id="@+id/text_choice"/>
+        android:id="@+id/text_choice"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="2"
+        android:paddingBottom="5dp">
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/left_choice"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            />
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:id="@+id/right_choice"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+           />
     </LinearLayout>
 </LinearLayout>
