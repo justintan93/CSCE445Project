@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <node>
+        <id>0</id>
+        <line>
+			<delay>1</delay>
+            <text>Welcome to the Exclusion zone . . . </text>
+            <link>http://www.bbc.com/news/uk-scotland-35921509</link>
+        </line>
+        <line>
+            <text>You have just arrived in Ukraine, to explore the former soviet city of Pripyat</text>
+        </line>
+        <line>
+            <text>The city of Pripyat was the ninth nuclear city in the Soviet Union founded on February 4, 1970</text>
+        </line>
+        <line>
+            <text>Once 49,400 thousand individuals lived in Pripyat</text>
+        </line>
+        <line>
+            <text>That was before . . .</text>
+        </line>
+        <line>
+            <text>April 26th, 1986: Chernobyl Nuclear power plant reactor number four suffered a catastrophic failure</text>
+        </line>
+        <line>
+            <text>The resultant release of radiation forces all residents of Pripyat to evacuate taking with them only what they could carry</text>
+        </line>
+        <line>
+            <text>The entire city is evacuated in just 3.5 hours on the afternoon of April 27th, 1986</text>
+        </line>
+        <line>
+            <text>No one is allowed back in . . .</text>
+        </line>
+        <line>
+            <text>The Exclusion zone is born.</text>
+        </line>
+        <line>
+            <text>Explore the Exclusion zone yourself and learn from the echoes of the past</text>
+        </line>
+        <line>
+            <text>Enter Pripyat from the . . .</text>
+        </line>
+        <choice1>
+            <text>West</text>
+            <id>1</id>
+        </choice1>
+        <choice2>
+            <text>East</text>
+            <id>2</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>1</id>
+        <line>
+            <text>You enter the city of Pripyat from the west</text>
+        </line>
+        <line>
+            <text>You find yourself at the intersection of pr. Stroiteley and Lesi Ukrainky St</text>
+        </line>
+        <line>
+            <text>You are 2.84 mi (4.58 km) from Chernobyl Nuclear Power Plant</text>
+        </line>
+        <line>
+            <text>You are facing South East looking down Lesi Ukrainky St.</text>
+        </line>
+        <line>
+            <text>You have entered the city from the forest</text>
+        </line>
+        <line>
+            <text>Along the way you have experienced the eerie calm of the mutated forest</text>
+        </line>
+        <line>
+            <text>To your left you see a large complex of Soviet Housing</text>
+        </line>
+        <line>
+            <text>To your right you see the Jupiter factory</text>
+        </line>
+        <line>
+            <text>You have a decision to make . . .</text>
+        </line>
+        <choice1>
+            <text>Left</text>
+            <id>3</id>
+        </choice1>
+        <choice2>
+            <text>Right</text>
+            <id>4</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>2</id>
+        <line>
+            <text>You enter the city of Pripyat from the east</text>
+        </line>
+        <line>
+            <text>You find yourself at the intersection of Pr. Stroiteley and Ul. Geroyev Stalingrada </text>
+        </line>
+        <line>
+            <text>You are 2.69 mi (4.33 km) from Chernobyl Nuclear Power Plant</text>
+        </line>
+        <line>
+            <text>You are facing South East looking down Ul. Geroyev stalingrada</text>
+        </line>
+        <line>
+            <text>You have entered the city from the river.</text>
+        </line>
+        <line>
+            <text>Along the way you have already passed many derelict soviet buildings</text>
+        </line>
+        <line>
+            <text>To the front of you, you see the Pripyat Shopping Center</text>
+        </line>
+        <line>
+            <text>To your right you see a large complex of soviet housing</text>
+        </line>
+        <line>
+            <text>You have a decision to make . . .</text>
+        </line>
+        <choice1>
+            <text>Forward</text>
+            <id>0</id>
+        </choice1>
+        <choice2>
+            <text>Right</text>
+            <id>3</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>3</id>
+        <line>
+            <text>You find yourself in the middle of a courtyard.</text>
+        </line>
+        <line>
+            <text>You are 2.61 mi (4.2 km) from the Chernobyl Nuclear Power Plant. </text>
+        </line>
+        <line>
+            <text>You are facing South East</text>
+        </line>
+        <line>
+            <text>All around you are Apartment buildings.</text>
+        </line>
+        <line>
+            <text>Their occupants are missing.</text>
+        </line>
+        <line>
+            <text>Personal effects still lie exactly where they were left decades ago.</text>
+        </line>
+        <line>
+            <text>A table set for lunch.</text>
+        </line>
+        <line>
+            <text>A teddy bear staring into the abyss. </text>
+        </line>
+        <line>
+            <text>The Buildings are waiting . . .</text>
+        </line>
+        <line>
+            <text>Waiting for their occupants to return.</text>
+        </line>
+        <line>
+            <text>They never will . . .</text>
+        </line>
+        <line>
+            <text>Although people can now once again visit the City.</text>
+        </line>
+        <line>
+            <text>They cannot stay for more than a few hours.</text>
+        </line>
+        <line>
+            <text>Pripyat can be a home to none . . .</text>
+        </line>
+        <line>
+            <text>Nature is slowly reclaiming the area.</text>
+        </line>
+        <line>
+            <text>Overgrowth is found everywhere.</text>
+        </line>
+        <line>
+            <text>The city refuses to go quietly.</text>
+        </line>
+        <line>
+            <text>Built to last by the Soviet Industrial Machine.</text>
+        </line>
+        <line>
+            <text>Soviet Architects designed for efficiency and longevity.</text>
+        </line>
+        <line>
+            <text>Concrete monoliths . . .</text>
+        </line>
+        <line>
+            <text>Symbols of conformity </text>
+        </line>
+        <line>
+            <text>Relics of the past that will persist well into the future.</text>
+        </line>
+        <line>
+            <text>To your left you see a shopping center</text>
+        </line>
+        <line>
+            <text>To your right you see the Jupiter Factory</text>
+        </line>
+        <line>
+            <text>You have a decision to make . . .</text>
+        </line>
+        <choice1>
+            <text>Left</text>
+            <id>0</id>
+        </choice1>
+        <choice2>
+            <text>Right</text>
+            <id>0</id>
+        </choice2>
+    </node>
+    <node>
+        <id>4</id>
+        <line>
+            <text>You find yourself in the remains of Jupiter Factory</text>
+        </line>
+        <line>
+            <text>You are 2.62 mi (4.22 km) from the Chernobyl Nuclear Plant</text>
+        </line>
+        <line>
+            <text>Jupiter Factory is the only other major arm of the Soviet Industrial complex to be found at Pripyat</text>
+        </line>
+        <line>
+            <text>Officially, the Jupiter factory manufactured electrical components for use in tape recorders Prior to the accident.</text>
+        </line>
+        <line>
+            <text>Unofficially, the factory manufactured electronics for military use in aircraft, submarines, and perhaps even for space.</text>
+        </line>
+        <line>
+            <text>Unlike most of Pripyat however, Jupiter Factory did not die on April 26th, 1986 . . .</text>
+        </line>
+        <line>
+            <text>Following the accident the factory was repurposed to serve as a testing laboratory for decontamination.</text>
+        </line>
+        <line>
+            <text>These “unofficial” laboratories functioned up until 1996, 10 years after the disaster . . .</text>
+        </line>
+        <line>
+            <text>Following 1996 however, Jupiter factory finally met the same fate as the rest of the city.</text>
+        </line>
+        <line>
+            <text>Visiting the factory today, you see a strange mix of artifacts from 1986 and those from 1996.</text>
+        </line>
+        <line>
+            <text>To your left you see a residential complex</text>
+        </line>
+        <line>
+            <text>To your front, you see a junkyard</text>
+        </line>
+        <line>
+            <text>You have a decision to make . . .</text>
+        </line>
+        <choice1>
+            <text>Left</text>
+            <id>3</id>
+        </choice1>
+        <choice2>
+            <text>Forward</text>
+            <id>0</id>
+        </choice2>
+    </node>
+</resources>
