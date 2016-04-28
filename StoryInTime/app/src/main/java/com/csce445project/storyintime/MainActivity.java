@@ -4,20 +4,13 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.net.Uri;
-import android.os.CountDownTimer;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
@@ -48,6 +41,7 @@ public class MainActivity extends Activity {
     static final String KEY_DELAY = "delay";
     static final String KEY_CHOICE1 = "choice1";
     static final String KEY_CHOICE2 = "choice2";
+    static final String KEY_TIMETEXT = "timeText";
     static final String KEY_TEXT = "text";
     static final String KEY_EMPTY = "empty";
     //node and line navigation info
@@ -123,7 +117,7 @@ public class MainActivity extends Activity {
         return mView;
     }
 
-    public View createLinkText(String message, String link) {
+    public View createLinkText(String message, String link, String image) {
         mView = LayoutInflater.from(this).inflate(R.layout.text_link,null);
         mText = (TextView) mView.findViewById(R.id.text_link_text);
         mText.setText(message);
@@ -196,17 +190,23 @@ public class MainActivity extends Activity {
         String text;
         int delay;
         String link;
+        String timeText;
+        String image;
         public Line() {
             text = "empty";
-            delay = 1;
+            delay = 2;
             link = "empty";
         }
         void setText(String s){text = s;}
         void setDelay(int i){delay = i;}
+        void setTimeText(String t){timeText = t;}
         void setLink(String s){link = s;}
+        void setImage(String i){image = i;}
         int getDelay(){return delay;}
+        String getTimeText(){return timeText;}
         String getText(){return text;}
         String getLink(){return link;}
+        String getImage(){return image;}
         Boolean hasLink(){
             if(!link.equals(KEY_EMPTY)){
                 return true;
@@ -252,13 +252,13 @@ public class MainActivity extends Activity {
     }
     private void getStory() {
         try {
-            XmlResourceParser xpp = getResources().getXml(R.xml.pripyat);
+            XmlResourceParser xpp = getResources().getXml(R.xml.storyintime);
             int eventType = xpp.getEventType();
             while(eventType != XmlPullParser.END_DOCUMENT){
                 if(eventType == XmlPullParser.START_DOCUMENT) {
                     System.out.println("Start document");
                 } else if(eventType == XmlPullParser.START_TAG) {
-                    System.out.println("Start tag "+xpp.getName());
+                    System.out.println("Start tag " + xpp.getName());
                     if(xpp.getName().equals(KEY_NODE)){
                         Node node = new Node();
                         while(true){
@@ -294,6 +294,14 @@ public class MainActivity extends Activity {
                                             while (eventType != XmlPullParser.END_TAG) {
                                                 if (eventType == XmlPullParser.TEXT) {
                                                     line.setLink(xpp.getText().toString());
+                                                }
+                                                eventType = xpp.next();
+                                            }
+                                        }
+                                        else if(xpp.getName().equals(KEY_TIMETEXT)){
+                                            while (eventType != XmlPullParser.END_TAG) {
+                                                if (eventType == XmlPullParser.TEXT) {
+                                                    line.setTimeText(xpp.getText().toString());
                                                 }
                                                 eventType = xpp.next();
                                             }
@@ -402,36 +410,30 @@ public class MainActivity extends Activity {
     }
 
     void update(){
+       // if(fullList.size() == 1)
         if(lineIterator < fullList.size() - 1) {
+
             if (fullList.get(lineIterator).hasLink()) {
 
-                addViewToListView(createLinkText(fullList.get(lineIterator).getText(), fullList.get(lineIterator).getLink()));
+                addViewToListView(createLinkText(fullList.get(lineIterator).getText(), fullList.get(lineIterator).getLink(), fullList.get(lineIterator).getImage()));
             } else {
                 addViewToListView(createText(fullList.get(lineIterator).getText()));
             }
-
-            lineIterator++;
+            if(fullList.get(lineIterator).getDelay() != 2){
+                addViewToListView(createTimeText(fullList.get(lineIterator).getTimeText()));
+                System.out.println("DELAY > 1");
+            }
             Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 public void run() {
                     update();
                 }
             }, fullList.get(lineIterator).getDelay() * 1000);
-
-
-        } else {
+        } else{
             addViewToListView(createChoiceText(fullList.get(lineIterator).getText(),nodes.get(nodeId).getLeftText(), nodes.get(nodeId).getRightText()));
         }
-
-           // adapter.notifyDataSetChanged();
-          //  final ListView listview = getListView();
-           // listview.post(new Runnable(){
-            //    @Override
-            //    public void run() {
-           //         listview.setSelection(adapter.getCount()-1);
-           //     }
-            //});
-
+        lineIterator++;
     }
+
 
 }

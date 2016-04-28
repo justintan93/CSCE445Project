@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <node>
+        <id>0</id>
+        <line>
+            <text>Gender?</text>
+        </line>
+        <choice1>
+            <text>Male</text>
+            <id>1</id>
+        </choice1>
+        <choice2>
+            <text>Female</text>
+            <id>2</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>1</id>
+        <line>
+            <text>It's a blazing hot afternoon in Little Rock, Arkansas.</text>
+        </line>
+        <line>
+            <text>You are a young black male in the 1950s.</text>
+        </line>
+        <line>
+            <text>You are consumed with thirst and desperately search for some water.</text>
+        </line>
+        <line>
+            <text>By sheer coincidence you come across this water station.</text>
+        </line>
+        <line>
+            <text>which fountain do you choose?</text>
+        </line>
+        <choice1>
+            <text>1</text>
+            <id>3</id>
+        </choice1>
+        <choice2>
+            <text>2</text>
+            <id>4</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>2</id>
+        <line>
+            <text>It's a blazing hot afternoon in Little Rock, Arkansas.</text>
+        </line>
+        <line>
+            <text>You are a young black female in the 1950s.</text>
+        </line>
+        <line>
+            <text>You are consumed with thirst and desperately search for some water.</text>
+        </line>
+        <line>
+            <text>By sheer coincidence you come across this water station.</text>
+        </line>
+        <line>
+            <text>which fountain do you choose?</text>
+        </line>
+        <choice1>
+            <text>1</text>
+            <id>3</id>
+        </choice1>
+        <choice2>
+            <text>2</text>
+            <id>4</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>3</id>
+        <line>
+            <delay>20</delay>
+            <timeText>You are taking a drink . . .</timeText>
+            <text>The water is distasteful and smells quite similar to urine but oddly satisfying.</text>
+        </line>
+        <line>
+            <text>It's getting quite late.</text>
+        </line>
+        <line>
+            <text>Mom must be furious.</text>
+        </line>
+        <line>
+            <text>You haven't retrieved eggs from Harp's grocery store.</text>
+        </line>
+        <line>
+            <delay>120</delay>
+            <timeText>You are running to the store . . .</timeText>
+            <text>You rush to the store a few blocks from here.</text>
+        </line>
+        <line>
+            <link>http://harps.graphics.grocerywebsite.com/G_Departments/History/History_store_360x282.jpg</link>
+            <text>Arriving at the empty counter, you see your favorite candy.</text>
+        </line>
+        <line>
+            <text>Only having enough money to purchase the eggs you debate on stealing the chocolate.</text>
+        </line>
+        <line>
+            <text>Do you steal both the eggs and chocolate since there is nobody at the counter and leave?</text>
+        </line>
+        <choice1>
+            <text>Steal</text>
+            <id>5</id>
+        </choice1>
+        <choice2>
+            <text>Don't Steal</text>
+            <id>6</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>4</id>
+        <line>
+            <delay>15</delay>
+            <timeText>You are taking a drink . . .</timeText>
+            <text>As you sip the delicious water, you feel a sudden sharp pain buzz through your body.</text>
+        </line>
+        <line>
+            <text>You have just been smacked upside the head by a white fellow.</text>
+        </line>
+        <line>
+            <text>Appalled you are unsure how to react.</text>
+        </line>
+        <line>
+            <text>Fight back or walk away?</text>
+        </line>
+        <choice1>
+            <text>Fight Back</text>
+            <id>7</id>
+        </choice1>
+        <choice2>
+            <text>Walk Away</text>
+            <id>10</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>5</id>
+        <line>
+            <text>You swiftly reach for the merchandise and are successfully able to escape from the store.</text>
+        </line>
+        <line>
+            <text>The cashier misses you just as you leave.</text>
+        </line>
+        <line>
+            <text>You are now headed home saving a few bucks.</text>
+        </line>
+        <line>
+            <text>The sun has set now.</text>
+        </line>
+        <line>
+            <text>You're anxious because your mother has strictly demanded you be home before dark</text>
+        </line>
+        <line>
+            <text>Approaching close to home you hear loud distressed screams.</text>
+        </line>
+        <line>
+            <text>Your elderly neighbor whom you've referred to as Uncle Malik is being beated repeatedly by a group of white hooded individuals.</text>
+        </line>
+        <line>
+            <text>Alone and frightened you must decide what to do.</text>
+        </line>
+        <line>
+            <text>Do you intervene or call for help?</text>
+        </line>
+        <choice1>
+            <text>Intervene (replay)</text>
+            <id>0</id>
+        </choice1>
+        <choice2>
+            <text>Call for help (replay)</text>
+            <id>0</id>
+        </choice2>
+    </node>
+    <node>
+        <id>6</id>
+        <line>
+            <delay>300</delay>
+            <timeText>You are waiting for the cashier to return . . .</timeText>
+            <text>You decide not to steal and await for the cashier.</text>
+        </line>
+        <line>
+            <text>As the cashier finally decides to show up 5 minutes later, you must wait your turn.</text>
+        </line>
+        <line>
+            <text>However; a pack of white people also join and blatantly cut you in line</text>
+        </line>
+        <line>
+            <text>You are in a rush.</text>
+        </line>
+        <line>
+            <text>Do you voice your objection or stay quiet</text>
+        </line>
+        <choice1>
+            <text>Voice</text>
+            <id>8</id>
+        </choice1>
+        <choice2>
+            <text>Quiet</text>
+            <id>9</id>
+        </choice2>
+    </node>
+    <node>
+        <id>7</id>
+        <line>
+            <delay>60</delay>
+            <timeText>You are fighting . . .</timeText>
+            <text>Consumed with rage you lash out and retaliate.</text>
+        </line>
+        <line>
+            <text>With your small body and hands you are no match for this giant.</text>
+        </line>
+        <line>
+            <delay>1800</delay>
+            <timeText>You are unconscious . . .</timeText>
+            <text>You are instantly knocked out and see nothing but darkness.</text>
+        </line>
+        <line>
+            <text>You awaken with warm water splashed across your face.</text>
+        </line>
+        <line>
+            <text>Your jaw aches with the slightest movement.</text>
+        </line>
+        <line>
+            <text>Close to tears you begin to set out to what you initially came to do.</text>
+        </line>
+        <line>
+            <text>It's getting quite late.</text>
+        </line>
+        <line>
+            <text>Mom must be furious.</text>
+        </line>
+        <line>
+            <text>You haven't retrieved eggs from Harp's grocery store.</text>
+        </line>
+        <line>
+            <delay>120</delay>
+            <timeText>You are running to the store . . .</timeText>
+            <text>You rush to the store a few blocks from here.</text>
+        </line>
+        <line>
+            <link>http://harps.graphics.grocerywebsite.com/G_Departments/History/History_store_360x282.jpg</link>
+            <text>Arriving at the empty counter, you see your favorite candy.</text>
+        </line>
+        <line>
+            <text>Only having enough money to purchase the eggs you debate on stealing the chocolate.</text>
+        </line>
+        <line>
+            <text>Do you steal both the eggs and chocolate since there is nobody at the counter and leave?</text>
+        </line>
+        <choice1>
+            <text>Steal</text>
+            <id>5</id>
+        </choice1>
+        <choice2>
+            <text>Don't Steal</text>
+            <id>6</id>
+        </choice2>
+    </node>
+    <node>
+        <id>8</id>
+        <line>
+            <text>Being impatient you lash out and retaliate.</text>
+        </line>
+        <line>
+            <text>You confront the man in front of you and are met with unpleasant comments.</text>
+        </line>
+        <line>
+            <text>You are shoved back and told to remain quiet.</text>
+        </line>
+        <line>
+            <delay>900</delay>
+            <timeText>You are waiting your turn in line . . .</timeText>
+            <text>You continue to wait your turn in line.</text>
+        </line>
+        <line>
+            <text>The sun has set now.</text>
+        </line>
+        <line>
+            <text>You're anxious because your mother has strictly demanded you be home before dark</text>
+        </line>
+        <line>
+            <text>Approaching close to home you hear loud distressed screams.</text>
+        </line>
+        <line>
+            <text>Your elderly neighbor whom you've referred to as Uncle Malik is being beated repeatedly by a group of white hooded individuals.</text>
+        </line>
+        <line>
+            <text>Alone and frightened you must decide what to do.</text>
+        </line>
+        <line>
+            <text>Do you intervene or call for help?</text>
+        </line>
+        <choice1>
+            <text>Intervene (replay)</text>
+            <id>0</id>
+        </choice1>
+        <choice2>
+            <text>Call for help (replay)</text>
+            <id>0</id>
+        </choice2>
+    </node>
+    <node>
+        <id>9</id>
+        <line>
+            <text>Being patient you keep your mouth shut.</text>
+        </line>
+        <line>
+            <delay>900</delay>
+            <timeText>You return to waiting your turn in line . . .</timeText>
+            <text>You continue to wait your turn in line.</text>
+        </line>
+        <line>
+            <text>The sun has set now.</text>
+        </line>
+        <line>
+            <text>You're anxious because your mother has strictly demanded you be home before dark</text>
+        </line>
+        <line>
+            <text>Approaching close to home you hear loud distressed screams.</text>
+        </line>
+        <line>
+            <text>Your elderly neighbor whom you've referred to as Uncle Malik is being beaten repeatedly by a group of white hooded individuals.</text>
+        </line>
+        <line>
+            <text>Alone and frightened you must decide what to do.</text>
+        </line>
+        <line>
+            <text>Do you intervene or call for help?</text>
+        </line>
+        <choice1>
+            <text>Intervene (replay)</text>
+            <id>0</id>
+        </choice1>
+        <choice2>
+            <text>Call for help (replay)</text>
+            <id>0</id>
+        </choice2>
+    </node>
+
+    <node>
+        <id>10</id>
+        <line>
+            <text>It's getting quite late.</text>
+        </line>
+        <line>
+            <text>Mom must be furious.</text>
+        </line>
+        <line>
+            <text>You haven't retrieved eggs from Harp's grocery store.</text>
+        </line>
+        <line>
+            <delay>120</delay>
+            <timeText>You are running to the store . . .</timeText>
+            <text>You rush to the store a few blocks from here.</text>
+        </line>
+        <line>
+            <link>http://harps.graphics.grocerywebsite.com/G_Departments/History/History_store_360x282.jpg</link>
+            <text>Arriving at the empty counter, you see your favorite candy.</text>
+        </line>
+        <line>
+            <text>Only having enough money to purchase the eggs you debate on stealing the chocolate.</text>
+        </line>
+        <line>
+            <text>Do you steal both the eggs and chocolate since there is nobody at the counter and leave?</text>
+        </line>
+        <choice1>
+            <text>Steal</text>
+            <id>5</id>
+        </choice1>
+        <choice2>
+            <text>Don't Steal</text>
+            <id>6</id>
+        </choice2>
+    </node>
+</resources>
